@@ -1,20 +1,101 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+## 🚀 Run Locally
 
-This contains everything you need to run your app locally.
+### 1. Install Node.js
+If you don’t already have it:  
+- Download Node.js from [https://nodejs.org](https://nodejs.org)  
+- Install it using the default options.
+- After installing you need to add path into environments variables
+- Press **win**Search for Environment Variable Click Edit :
+- <div align="center">
+<div align="center">
+<div align="center">
+  <img src="
+" alt="Environment variables" width="100%" />
+</div>
 
-View your app in AI Studio: https://ai.studio/apps/drive/13ND4L7xiCQebd6UZTtLoQUY2DQhkfMOX
 
-## Run Locally
+### 2. Open the Project Folder
+- On Windows, press **Win + R**, type `cmd`, and press Enter.  
+- In the terminal, move to the project folder, for example:  
 
-**Prerequisites:**  Node.js
+```bash
+cd C:\Users\YourName\Downloads\my-ai-app
+```
 
+### 3. Install Dependencies
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Run:
+
+```bash
+npm install
+```
+
+### 4. Add Your API Key
+
+* Find the file named **.env.local** in the project folder.
+* Open it with Notepad (or any text editor).
+* Add your Gemini API key like this:
+
+```
+GEMINI_API_KEY=your_api_key_here
+```
+
+* Save the file.
+
+### 5. Start the App
+
+Run:
+
+```bash
+npm run dev
+```
+
+* The terminal will show something like:
+
+```
+Local:   http://localhost:5173/
+```
+
+* Open that link in your web browser to see the app running.
+
+---
+
+## 📱 Run on Your Phone (Optional)
+
+If your PC is connected to your phone’s hotspot, you can also view the app directly on your mobile:
+
+1. Start the app with:
+
+   ```bash
+   npm run dev -- --host
+   ```
+
+2. Find your PC’s IP address:
+
+   * On Windows, run:
+
+     ```bash
+     ipconfig
+     ```
+
+     Look under **Wireless LAN adapter Wi-Fi** → **IPv4 Address** (e.g., `192.168.43.123`).
+
+3. On your phone, open:
+
+   ```
+   http://<your_pc_ip>:5173/
+   ```
+
+   Example:
+
+   ```
+   http://192.168.43.123:5173/
+   ```
+
+---
+
+✅ That’s it! Your app is now running locally.  
+💡 To stop it, go back to the terminal and press **Ctrl + C**.
