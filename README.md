@@ -12,8 +12,7 @@ If you don’t already have it:
 - <div align="center">
 <div align="center">
 <div align="center">
-  <img src="
-" alt="Environment variables" width="100%" />
+  <img src="https://github.com/hasnainmorani700/Youtube_Script_Helper/blob/main/edit-environment-variables.webp" alt="Environment variables" width="50%" />
 </div>
 
 
